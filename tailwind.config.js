@@ -26,7 +26,7 @@ module.exports = {
       },
       fontFamily: {
         sans: ['Inter', ...defaultTheme.fontFamily.sans],
-        display: ['DM Sans', ...defaultTheme.fontFamily.sans],
+        display: ['Noto Sans SC', ...defaultTheme.fontFamily.sans],
       },
       maxWidth: {
         '2xl': '40rem',
