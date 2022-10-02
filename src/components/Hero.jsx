@@ -15,7 +15,6 @@ export function Hero() {
           width={918}
           height={1495}
           priority
-          unoptimized
         />
         <div className="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-white" />
         <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-white" />
@@ -23,31 +22,28 @@ export function Hero() {
       <Container className="relative">
         <div className="mx-auto max-w-2xl lg:max-w-4xl lg:px-12">
           <h1 className="font-display text-5xl font-bold tracking-tighter text-blue-600 sm:text-7xl">
-            <span className="sr-only">DeceptiConf - </span>A design conference
-            for the dark side.
+            <span className="sr-only">DevJoy - </span>面向开发者的造物节
           </h1>
           <div className="mt-6 space-y-6 font-display text-2xl tracking-tight text-blue-900">
             <p>
-              The next generation of web users are tech-savvy and suspicious.
-              They know how to use dev tools, they can detect a phishing scam
-              from a mile away, and they certainly aren’t accepting any checks
-              from Western Union.
+              DevJoy 是一个面向开发者 (Developer) 的造物节
+              (Joy)，汇聚了开发者感兴趣的方方面面，包括但不限于开发者工具，游戏，键盘，手办，漫画等。
             </p>
+            <p>如果您已经是一名开发者，在这里可以找到社区和同伴。</p>
+            <p>如果您想成为一名开发者，在这里可以窥见未来的职业。</p>
             <p>
-              At DeceptiConf you’ll learn about the latest dark patterns being
-              developed to trick even the smartest visitors, and you’ll learn
-              how to deploy them without ever being detected.
+              您也可以只是好奇，从这里开始了解开发者，这群靠着一台电脑就能创造整个世界的灵魂。
             </p>
           </div>
           <Button href="#" className="mt-10 w-full sm:hidden">
-            Get your tickets
+            免费预约你的入场券
           </Button>
           <dl className="mt-10 grid grid-cols-2 gap-y-6 gap-x-10 sm:mt-16 sm:gap-y-10 sm:gap-x-16 sm:text-center lg:auto-cols-auto lg:grid-flow-col lg:grid-cols-none lg:justify-start lg:text-left">
             {[
-              ['Speakers', '18'],
-              ['People Attending', '2,091'],
-              ['Venue', 'Staples Center'],
-              ['Location', 'Los Angeles'],
+              ['参展商', ' 25'],
+              ['参展人数', ' 1200'],
+              ['展会场所', 'WeWork 威海路中国旗舰店'],
+              ['地点', '上海'],
             ].map(([name, value]) => (
               <div key={name}>
                 <dt className="font-mono text-sm text-blue-600">{name}</dt>

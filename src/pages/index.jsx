@@ -4,25 +4,25 @@ import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
 import { Hero } from '@/components/Hero'
 import { Newsletter } from '@/components/Newsletter'
-import { Schedule } from '@/components/Schedule'
-import { Speakers } from '@/components/Speakers'
+import { Venue } from '@/components/Venue'
+import { Exhibitors } from '@/components/Exhibitors'
 import { Sponsors } from '@/components/Sponsors'
 
 export default function Home() {
   return (
     <>
       <Head>
-        <title>DeceptiConf - A community-driven design conference</title>
+        <title>DevJoy - 开发者的造物节 </title>
         <meta
           name="description"
-          content="At DeceptiConf you’ll learn about the latest dark patterns being developed to trick even the smartest visitors, and you’ll learn how to deploy them without ever being detected."
+          content="DevJoy 是一个面向开发者 (Developer) 的造物节 (Joy)，汇聚了开发者感兴趣的方方面面，包括但不限于开发者工具，游戏，键盘，手办，漫画等。"
         />
       </Head>
       <Header />
       <main>
         <Hero />
-        <Speakers />
-        <Schedule />
+        <Exhibitors />
+        <Venue />
         <Sponsors />
         <Newsletter />
       </main>

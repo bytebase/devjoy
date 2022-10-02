@@ -30,16 +30,11 @@ export function Newsletter() {
             alt=""
             width={919}
             height={1351}
-            unoptimized
           />
           <div className="relative mx-auto grid max-w-2xl grid-cols-1 gap-x-32 gap-y-14 xl:max-w-none xl:grid-cols-2">
             <div>
               <p className="font-display text-4xl font-medium tracking-tighter text-blue-900 sm:text-5xl">
-                Stay up to date
-              </p>
-              <p className="mt-4 text-lg tracking-tight text-blue-900">
-                Get updates on all of our events and be the first to get
-                notified when tickets go on sale.
+                关注 DevJoy 公众号获取最新活动资讯
               </p>
             </div>
             <form>

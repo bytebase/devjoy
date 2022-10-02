@@ -1,19 +1,22 @@
-# Keynote
+# DevJoy
 
-Keynote is a [Tailwind UI](https://tailwindui.com) site template built using [Tailwind CSS](https://tailwindcss.com) and [Next.js](https://nextjs.org).
+Website for https://www.devjoy.com
 
 ## Getting started
 
-To get started with this template, first install the npm dependencies:
+### Prerequisites
+
+- [Node.js v16](https://nodejs.org/)
+- [pnpm](https://pnpm.io/installation)
 
 ```bash
-npm install
+pnpm install
 ```
 
 Next, run the development server:
 
 ```bash
-npm run dev
+pnpm run dev
 ```
 
 Finally, open [http://localhost:3000](http://localhost:3000) in your browser to view the website.

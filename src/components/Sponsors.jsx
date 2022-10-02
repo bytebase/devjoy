@@ -1,20 +1,14 @@
 import Image from 'next/future/image'
 
 import { Container } from '@/components/Container'
-import logoLaravel from '@/images/logos/laravel.svg'
-import logoMirage from '@/images/logos/mirage.svg'
-import logoStatamic from '@/images/logos/statamic.svg'
-import logoStaticKit from '@/images/logos/statickit.svg'
-import logoTransistor from '@/images/logos/transistor.svg'
-import logoTuple from '@/images/logos/tuple.svg'
+import logoYuque from '@/images/logos/yuque.png'
+import logoBytebase from '@/images/logos/bytebase.png'
+import logoWeWork from '@/images/logos/wework.png'
 
 const sponsors = [
-  { name: 'Transistor', logo: logoTransistor },
-  { name: 'Tuple', logo: logoTuple },
-  { name: 'StaticKit', logo: logoStaticKit },
-  { name: 'Mirage', logo: logoMirage },
-  { name: 'Laravel', logo: logoLaravel },
-  { name: 'Statamic', logo: logoStatamic },
+  { name: 'Bytebase', website: 'https://bytebase.com', logo: logoBytebase },
+  { name: 'WeWork', website: 'https://wework.cn', logo: logoWeWork },
+  { name: 'Yuque', website: 'https://yuque.com', logo: logoYuque },
 ]
 
 export function Sponsors() {
@@ -22,16 +16,19 @@ export function Sponsors() {
     <section id="sponsors" aria-label="Sponsors" className="py-20 sm:py-32">
       <Container>
         <h2 className="mx-auto max-w-2xl text-center font-display text-4xl font-medium tracking-tighter text-blue-900 sm:text-5xl">
-          Current sponsorships for our workshops and speakers.
+          联合主办方
         </h2>
         <div className="mx-auto mt-20 grid max-w-max grid-cols-1 place-content-center gap-y-12 gap-x-32 sm:grid-cols-3 md:gap-x-16 lg:gap-x-32">
           {sponsors.map((sponsor) => (
-            <div
+            <a
+              href={sponsor.website}
+              target="_blank"
+              rel="noreferrer"
               key={sponsor.name}
-              className="flex items-center justify-center"
+              className="flex items-center justify-center hover:opacity-75"
             >
-              <Image src={sponsor.logo} alt={sponsor.name} unoptimized />
-            </div>
+              <Image src={sponsor.logo} alt={sponsor.name} />
+            </a>
           ))}
         </div>
       </Container>
