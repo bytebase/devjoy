@@ -127,11 +127,11 @@ export function Exhibitors() {
         <div className="mx-auto max-w-4xl lg:mx-0">
           <h2
             id="speakers-title"
-            className="font-display text-4xl font-medium tracking-tighter text-blue-600 sm:text-5xl"
+            className="font-display text-4xl font-medium tracking-tighter text-slate-900 sm:text-5xl"
           >
             参展商
           </h2>
-          <p className="mt-4 font-display text-2xl tracking-tight text-blue-900">
+          <p className="mt-4 font-display text-2xl tracking-tight text-black">
             从国际知名大厂到个人工作室，我们找来了那些内容有趣，开发者喜欢的展出。
           </p>
         </div>
@@ -142,16 +142,18 @@ export function Exhibitors() {
                 <div
                   className={clsx(
                     'absolute top-0 left-0 right-4 bottom-6 rounded-4xl border transition duration-300 group-hover:scale-95 xl:right-6',
-                    ['border-blue-300', 'border-indigo-300', 'border-sky-300'][
-                      exhibitorIndex % 3
-                    ]
+                    [
+                      'border-slate-700',
+                      'border-slate-800',
+                      'border-slate-900',
+                    ][exhibitorIndex % 3]
                   )}
                 />
                 <a
                   href={exhibitor.website}
                   target="_blank"
                   rel="noreferrer"
-                  className="absolute inset-0 bg-indigo-50"
+                  className="absolute inset-0 bg-white"
                   style={{ clipPath: `url(#${id}-${exhibitorIndex % 3})` }}
                 >
                   <Image
@@ -163,7 +165,7 @@ export function Exhibitors() {
                   />
                 </a>
               </div>
-              <h3 className="mt-8 font-display text-xl font-bold tracking-tight text-slate-900">
+              <h3 className="mt-8 font-display text-xl font-bold tracking-tight text-black">
                 {exhibitor.name}
               </h3>
             </div>
