@@ -1,6 +1,6 @@
 # DevJoy
 
-Website for https://www.devjoy.com
+Website for https://www.devjoy.org
 
 ## Getting started
 
