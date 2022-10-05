@@ -1,12 +1,11 @@
 import Image from 'next/future/image'
 
 import { Container } from '@/components/Container'
-import backgroundImage from '@/images/background.jpg'
 import weworkImage from '@/images/wework.webp'
 
 export function Venue() {
   return (
-    <section id="schedule" aria-label="Schedule" className="py-20">
+    <section id="schedule" aria-label="Schedule" className="py-4">
       <Container className="relative z-10">
         <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-4xl lg:pr-24">
           <h2 className="font-display text-4xl font-medium tracking-tighter text-slate-900 sm:text-5xl">
@@ -23,18 +22,7 @@ export function Venue() {
           </p>
         </div>
       </Container>
-      <div className="relative mt-14">
-        {/* <div className="absolute inset-x-0 -top-40 -bottom-32 overflow-hidden bg-indigo-50">
-          <Image
-            className="absolute left-full top-0 -translate-x-1/2 sm:left-1/2 sm:translate-y-[-15%] sm:translate-x-[-20%] md:translate-x-0 lg:translate-x-[5%] lg:translate-y-[4%] xl:translate-y-[-8%] xl:translate-x-[27%]"
-            src={backgroundImage}
-            alt=""
-            width={918}
-            height={1495}
-          />
-          <div className="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-white" />
-          <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-white" />
-        </div> */}
+      <div className="relative z-10 mt-14">
         <Container className="relative">
           <Image className="" src={weworkImage} alt="" />
         </Container>

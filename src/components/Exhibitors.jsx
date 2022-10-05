@@ -15,6 +15,7 @@ import pingcapImage from '@/images/logos/pingcap.png'
 import showMeBugImage from '@/images/logos/showmebug.svg'
 import xdImage from '@/images/logos/xd.png'
 import yuqueImage from '@/images/logos/yuque.png'
+import bug3Image from '@/images/bug3.webp'
 
 const exhibitors = [
   {
@@ -125,12 +126,15 @@ export function Exhibitors() {
       <ImageClipPaths id={id} />
       <Container>
         <div className="mx-auto max-w-4xl lg:mx-0">
-          <h2
-            id="speakers-title"
-            className="font-display text-4xl font-medium tracking-tighter text-slate-900 sm:text-5xl"
-          >
-            参展商
-          </h2>
+          <div className="flex flex-row items-center space-x-2">
+            <Image className="h-16 w-auto" src={bug3Image} alt="" />
+            <h2
+              id="speakers-title"
+              className="font-display text-4xl font-medium tracking-tighter text-slate-900 sm:text-5xl"
+            >
+              参展商
+            </h2>
+          </div>
           <p className="mt-4 font-display text-2xl tracking-tight text-black">
             从国际知名大厂到个人工作室，我们找来了那些内容有趣，开发者喜欢的展出。
           </p>

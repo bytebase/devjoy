@@ -2,22 +2,19 @@ import Image from 'next/future/image'
 
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
-import backgroundImage from '@/images/background.jpg'
+import skateboardImage from '@/images/skateboard.webp'
+import bug4Image from '@/images/bug4.webp'
 
 export function Hero() {
   return (
-    <div className="relative pt-10 pb-20 sm:py-24">
+    <div className="relative pt-10 pb-4 sm:py-24">
       <div className="absolute inset-x-0 -top-48 -bottom-14 overflow-hidden">
-        {/* <Image
-          className="absolute top-0 left-0 translate-y-[-10%] translate-x-[-55%] -scale-x-100 sm:left-1/2 sm:translate-y-[-6%] sm:translate-x-[-98%] lg:translate-x-[-106%] xl:translate-x-[-122%]"
-          src={backgroundImage}
+        <Image
+          className="absolute left-full top-0 -translate-x-1/2 sm:left-1/2 sm:translate-x-[-20%] md:translate-x-0 lg:translate-x-[5%] xl:translate-x-[27%]"
+          src={skateboardImage}
           alt=""
-          width={918}
-          height={1495}
           priority
-        /> */}
-        {/* <div className="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-white" />
-        <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-white" /> */}
+        />
       </div>
       <Container className="relative">
         <div className="mx-auto max-w-2xl lg:max-w-4xl lg:px-12">
@@ -36,7 +33,8 @@ export function Hero() {
             </p>
           </div>
           <Button href="#" className="mt-10 w-full sm:hidden">
-            免费预约你的入场券
+            <Image className="-mt-1 h-7 w-auto" src={bug4Image} alt="" />
+            <div>免费预约你的入场券</div>
           </Button>
           <dl className="mt-10 grid grid-cols-2 gap-y-6 gap-x-10 sm:mt-16 sm:gap-y-10 sm:gap-x-16 sm:text-center lg:auto-cols-auto lg:grid-flow-col lg:grid-cols-none lg:justify-start lg:text-left">
             {[

@@ -1,7 +1,9 @@
+import Image from 'next/future/image'
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
 import { DiamondIcon } from '@/components/DiamondIcon'
 import { Logo } from '@/components/Logo'
+import bug4Image from '@/images/bug4.webp'
 
 export function Header() {
   return (
@@ -21,7 +23,10 @@ export function Header() {
           </div>
         </div>
         <div className="hidden sm:mt-10 sm:flex lg:mt-0 lg:grow lg:basis-0 lg:justify-end">
-          <Button href="#">免费预约入场券</Button>
+          <Button href="#" className="items-center">
+            <Image className="-mt-1 h-7 w-auto" src={bug4Image} alt="" />
+            <div>免费预约入场券</div>
+          </Button>
         </div>
       </Container>
     </header>
