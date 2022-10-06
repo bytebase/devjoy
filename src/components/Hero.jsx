@@ -36,20 +36,17 @@ export function Hero() {
             <Image className="-mt-1 h-7 w-auto" src={bug4Image} alt="" />
             <div>免费预约你的入场券</div>
           </Button>
-          <dl className="mt-10 grid grid-cols-2 gap-y-6 gap-x-10 sm:mt-16 sm:gap-y-10 sm:gap-x-16 sm:text-center lg:auto-cols-auto lg:grid-flow-col lg:grid-cols-none lg:justify-start lg:text-left">
-            {[
-              ['参展商', ' 25'],
-              ['参展人数', ' 1200'],
-              ['展会地址', 'WeWork 威海路中国旗舰店'],
-              ['城市', '上海'],
-            ].map(([name, value]) => (
-              <div key={name}>
-                <dt className="font-mono text-sm text-slate-900">{name}</dt>
-                <dd className="mt-0.5 text-2xl font-semibold tracking-tight text-black">
-                  {value}
-                </dd>
-              </div>
-            ))}
+          <dl className="mt-10 grid grid-cols-1 gap-y-6 gap-x-10 sm:mt-16 sm:gap-y-10 sm:gap-x-16 sm:text-center lg:auto-cols-auto lg:grid-flow-col lg:grid-cols-none lg:justify-start lg:text-left">
+            {[['展会地点', '上海市静安区威海路 696 号 WeWork 中国旗舰店']].map(
+              ([name, value]) => (
+                <div key={name}>
+                  <dt className="font-mono text-sm text-slate-900">{name}</dt>
+                  <dd className="mt-0.5 text-2xl font-semibold tracking-tight text-black">
+                    {value}
+                  </dd>
+                </div>
+              )
+            )}
           </dl>
         </div>
       </Container>
