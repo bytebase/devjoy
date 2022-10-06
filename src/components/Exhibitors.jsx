@@ -80,24 +80,6 @@ const exhibitors = [
   },
 ]
 
-function ImageClipPaths({ id, ...props }) {
-  return (
-    <svg aria-hidden="true" width={0} height={0} {...props}>
-      <defs>
-        <clipPath id={`${id}-0`} clipPathUnits="objectBoundingBox">
-          <path d="M0,0 h0.729 v0.129 h0.121 l-0.016,0.032 C0.815,0.198,0.843,0.243,0.885,0.243 H1 v0.757 H0.271 v-0.086 l-0.121,0.057 v-0.214 c0,-0.032,-0.026,-0.057,-0.057,-0.057 H0 V0" />
-        </clipPath>
-        <clipPath id={`${id}-1`} clipPathUnits="objectBoundingBox">
-          <path d="M1,1 H0.271 v-0.129 H0.15 l0.016,-0.032 C0.185,0.802,0.157,0.757,0.115,0.757 H0 V0 h0.729 v0.086 l0.121,-0.057 v0.214 c0,0.032,0.026,0.057,0.057,0.057 h0.093 v0.7" />
-        </clipPath>
-        <clipPath id={`${id}-2`} clipPathUnits="objectBoundingBox">
-          <path d="M1,0 H0.271 v0.129 H0.15 l0.016,0.032 C0.185,0.198,0.157,0.243,0.115,0.243 H0 v0.757 h0.729 v-0.086 l0.121,0.057 v-0.214 c0,-0.032,0.026,-0.057,0.057,-0.057 h0.093 V0" />
-        </clipPath>
-      </defs>
-    </svg>
-  )
-}
-
 export function Exhibitors() {
   let id = useId()
   let [tabOrientation, setTabOrientation] = useState('horizontal')
@@ -123,7 +105,6 @@ export function Exhibitors() {
       aria-labelledby="speakers-title"
       className="py-20 sm:py-32"
     >
-      <ImageClipPaths id={id} />
       <Container>
         <div className="mx-auto max-w-4xl lg:mx-0">
           <div className="flex flex-row items-center space-x-2">
@@ -142,17 +123,7 @@ export function Exhibitors() {
         <div className="mt-8 grid grid-cols-1 gap-x-8 gap-y-10 sm:grid-cols-2 sm:gap-y-16 md:grid-cols-3 [&:not(:focus-visible)]:focus:outline-none">
           {exhibitors.map((exhibitor, exhibitorIndex) => (
             <div key={exhibitorIndex}>
-              <div className="group relative h-[17.5rem] transform overflow-hidden rounded-4xl">
-                <div
-                  className={clsx(
-                    'absolute top-0 left-0 right-4 bottom-6 rounded-4xl border transition duration-300 group-hover:scale-95 xl:right-6',
-                    [
-                      'border-slate-700',
-                      'border-slate-800',
-                      'border-slate-900',
-                    ][exhibitorIndex % 3]
-                  )}
-                />
+              <div className="group relative h-[17.5rem] transform overflow-hidden rounded-4xl border-2 border-black">
                 <a
                   href={exhibitor.website}
                   target="_blank"

@@ -40,8 +40,8 @@ export function Hero() {
             {[
               ['参展商', ' 25'],
               ['参展人数', ' 1200'],
-              ['展会场所', 'WeWork 威海路中国旗舰店'],
-              ['地点', '上海'],
+              ['展会地址', 'WeWork 威海路中国旗舰店'],
+              ['城市', '上海'],
             ].map(([name, value]) => (
               <div key={name}>
                 <dt className="font-mono text-sm text-slate-900">{name}</dt>
