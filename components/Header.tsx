@@ -28,10 +28,10 @@ const Header = () => {
           </div>
         </div>
         <div className="hidden shrink-0 sm:mt-10 sm:flex lg:mt-0 lg:grow lg:basis-0 lg:justify-end">
-          <Button href="#" className="flex flex-row justify-center items-center flex-nowrap">
+          {/* <Button href="#" className="flex flex-row justify-center items-center flex-nowrap">
             <Image className="-mt-1 h-7 w-auto" src={bug4Image} alt="" />
             <span className="whitespace-nowrap">免费预约入场券</span>
-          </Button>
+          </Button> */}
         </div>
       </Container>
     </header>
