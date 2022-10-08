@@ -96,7 +96,7 @@ const Hero = () => {
         ref={imageContainerRef}
       >
         <img
-          className="h-full w-auto max-w-full"
+          className="h-auto lg:h-full w-auto max-w-full"
           src={skateboardImage.src}
           alt=""
         />
