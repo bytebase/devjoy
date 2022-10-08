@@ -51,7 +51,7 @@ const Hero = () => {
 
   return (
     <div
-      className="relative pt-10 pb-4 mx-auto w-full flex flex-col justify-start items-start sm:py-24"
+      className="relative pt-10 pb-4 mx-auto w-full flex flex-col justify-start items-start max-w-full overflow-hidden sm:py-24"
       ref={sectionContainerRef}
     >
       <Container className="relative w-full z-10 flex justify-center">
