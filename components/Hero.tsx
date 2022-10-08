@@ -73,10 +73,10 @@ const Hero = () => {
               您也可以只是好奇，从这里开始了解开发者，这群靠着一台电脑就能创造整个世界的灵魂。
             </p>
           </div>
-          <Button href="#" className="mt-10 w-full sm:hidden">
+          {/* <Button href="#" className="mt-10 w-full sm:hidden">
             <Image className="-mt-1 h-7 w-auto" src={bug4Image} alt="" />
             <div>免费预约入场券</div>
-          </Button>
+          </Button> */}
           <dl className="mt-10 grid grid-cols-1 gap-y-6 gap-x-10 sm:mt-16 sm:gap-y-10 sm:gap-x-16 sm:text-center lg:auto-cols-auto lg:grid-flow-col lg:grid-cols-none lg:justify-start lg:text-left">
             {[["展会地点", "上海市静安区威海路 696 号 WeWork 中国旗舰店"]].map(
               ([name, value]) => (
