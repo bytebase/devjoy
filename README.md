@@ -1,6 +1,6 @@
 # DevJoy
 
-Website for https://www.devjoy.org
+Website for [https://www.devjoy.org](https://www.devjoy.org).
 
 ## Getting started
 
