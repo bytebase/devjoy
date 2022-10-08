@@ -1,14 +1,13 @@
-import Head from 'next/head'
+import Head from "next/head";
+import Exhibitors from "@/components/Exhibitors";
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
+import Hero from "@/components/Hero";
+import Newsletter from "@/components/Newsletter";
+import Sponsors from "@/components/Sponsors";
+import Venue from "@/components/Venue";
 
-import { Footer } from '@/components/Footer'
-import { Header } from '@/components/Header'
-import { Hero } from '@/components/Hero'
-import { Newsletter } from '@/components/Newsletter'
-import { Venue } from '@/components/Venue'
-import { Exhibitors } from '@/components/Exhibitors'
-import { Sponsors } from '@/components/Sponsors'
-
-export default function Home() {
+const Home = () => {
   return (
     <>
       <Head>
@@ -28,5 +27,7 @@ export default function Home() {
       </main>
       <Footer />
     </>
-  )
-}
+  );
+};
+
+export default Home;

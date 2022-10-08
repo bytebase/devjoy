@@ -1,11 +1,11 @@
-import Image from 'next/future/image'
-import { Button } from '@/components/Button'
-import { Container } from '@/components/Container'
-import { DiamondIcon } from '@/components/DiamondIcon'
-import { Logo } from '@/components/Logo'
-import bug4Image from '@/images/bug4.webp'
+import Image from "next/future/image";
+import Button from "./Button";
+import Container from "./Container";
+import DiamondIcon from "./DiamondIcon";
+import Logo from "./Logo";
+import bug4Image from "@/public/images/bug4.webp";
 
-export function Header() {
+const Header = () => {
   return (
     <header className="relative z-50 pb-11 lg:pt-11">
       <Container className="flex flex-wrap items-center justify-center sm:justify-between lg:flex-nowrap">
@@ -35,5 +35,7 @@ export function Header() {
         </div>
       </Container>
     </header>
-  )
-}
+  );
+};
+
+export default Header;

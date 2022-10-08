@@ -1,18 +1,17 @@
-import Image from 'next/future/image'
-
-import { Container } from '@/components/Container'
-import logoYuque from '@/images/logos/yuque.png'
-import logoBytebase from '@/images/logos/bytebase.png'
-import logoWeWork from '@/images/logos/wework.png'
-import bug1Image from '@/images/bug1.webp'
+import Image from "next/future/image";
+import Container from "./Container";
+import logoYuque from "@/public/images/logos/yuque.png";
+import logoBytebase from "@/public/images/logos/bytebase.png";
+import logoWeWork from "@/public/images/logos/wework.png";
+import bug1Image from "@/public/images/bug1.webp";
 
 const sponsors = [
-  { name: 'Bytebase', website: 'https://bytebase.com', logo: logoBytebase },
-  { name: 'WeWork', website: 'https://wework.cn', logo: logoWeWork },
-  { name: 'Yuque', website: 'https://yuque.com', logo: logoYuque },
-]
+  { name: "Bytebase", website: "https://bytebase.com", logo: logoBytebase },
+  { name: "WeWork", website: "https://wework.cn", logo: logoWeWork },
+  { name: "Yuque", website: "https://yuque.com", logo: logoYuque },
+];
 
-export function Sponsors() {
+const Sponsors = () => {
   return (
     <section id="sponsors" aria-label="Sponsors" className="py-20 sm:py-32">
       <Container>
@@ -37,5 +36,7 @@ export function Sponsors() {
         </div>
       </Container>
     </section>
-  )
-}
+  );
+};
+
+export default Sponsors;
