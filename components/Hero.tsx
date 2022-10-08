@@ -24,9 +24,9 @@ const Hero = () => {
         const mx =
           sectionContainerRef.current.clientWidth -
           sloganContainerRef.current.clientWidth;
-        // 200 has a better spacing lookings.
+        // 160 has a better spacing lookings.
         imageContainerRef.current.style.left = `${
-          sloganContainerRef.current?.clientWidth + mx / 2 - 200
+          sloganContainerRef.current?.clientWidth + mx / 2 - 160
         }px`;
         imageContainerRef.current.style.height = `${
           sectionContainerRef.current.clientHeight
