@@ -24,12 +24,12 @@ const Hero = () => {
         const mx =
           sectionContainerRef.current.clientWidth -
           sloganContainerRef.current.clientWidth;
-        // 160 and 60 have a better spacing lookings.
+        // 200 has a better spacing lookings.
         imageContainerRef.current.style.left = `${
-          sloganContainerRef.current?.clientWidth + mx / 2 - 160
+          sloganContainerRef.current?.clientWidth + mx / 2 - 200
         }px`;
         imageContainerRef.current.style.height = `${
-          sectionContainerRef.current.clientHeight + 60
+          sectionContainerRef.current.clientHeight
         }px`;
       } else {
         imageContainerRef.current.style.height = `unset`;
@@ -51,12 +51,12 @@ const Hero = () => {
 
   return (
     <div
-      className="relative pt-10 pb-4 mx-auto w-full flex flex-col justify-start items-start sm:py-24"
+      className="relative pt-10 pb-4 mx-auto w-full flex flex-col justify-start items-start max-w-full overflow-hidden lg:py-24"
       ref={sectionContainerRef}
     >
       <Container className="relative w-full z-10 flex justify-center">
         <div
-          className="relative max-w-2xl lg:max-w-3xl"
+          className="relative w-full max-w-3xl"
           ref={sloganContainerRef}
         >
           <h1 className="font-display text-5xl font-bold tracking-tighter text-slate-900 sm:text-7xl">

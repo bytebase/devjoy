@@ -1,3 +1,4 @@
+import clsx from "clsx";
 import Image from "next/future/image";
 import logoDevJoy from "@/public/images/logos/devjoy.webp";
 
@@ -6,7 +7,9 @@ interface Props {
 }
 
 const Logo = (props: Props) => {
-  return <Image src={logoDevJoy} alt="" {...props} />;
+  const { className } = props;
+
+  return <Image src={logoDevJoy} className={clsx(className)} alt="" />;
 };
 
 export default Logo;
