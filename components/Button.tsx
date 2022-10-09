@@ -13,7 +13,11 @@ const Button = ({ href, className, ...props }: Props) => {
     className
   );
 
-  return href ? <Link href={href} className={className} {...props} /> : <button className={className} {...props} />;
+  return href ? (
+    <Link href={href} className={className} {...props} />
+  ) : (
+    <button className={className} {...props} />
+  );
 };
 
 export default Button;

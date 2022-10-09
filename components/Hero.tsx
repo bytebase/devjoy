@@ -1,11 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
-import Image from "next/image";
 import { useEffect, useRef } from "react";
-import Button from "./Button";
 import Container from "./Container";
 import skateboardImage from "@/public/images/skateboard.webp";
-import bug4Image from "@/public/images/bug4.webp";
 
+const TAILWIND_XL_WIDTH = 1280;
 const TAILWIND_LG_WIDTH = 1024;
 
 const Hero = () => {
@@ -19,17 +17,24 @@ const Hero = () => {
       sloganContainerRef.current &&
       imageContainerRef.current
     ) {
-      if (document.body.clientWidth >= TAILWIND_LG_WIDTH) {
-        sloganContainerRef.current.parentElement?.clientWidth;
-        const mx =
-          sectionContainerRef.current.clientWidth -
-          sloganContainerRef.current.clientWidth;
-        // 160 has a better spacing lookings.
+      sloganContainerRef.current.parentElement?.clientWidth;
+      const mx =
+        sectionContainerRef.current.clientWidth -
+        sloganContainerRef.current.clientWidth;
+
+      if (document.body.clientWidth >= TAILWIND_XL_WIDTH) {
+        imageContainerRef.current.style.left = `${
+          sloganContainerRef.current?.clientWidth + mx / 2 - 120
+        }px`;
+        imageContainerRef.current.style.height = `${
+          sectionContainerRef.current.clientHeight + 40
+        }px`;
+      } else if (document.body.clientWidth >= TAILWIND_LG_WIDTH) {
         imageContainerRef.current.style.left = `${
           sloganContainerRef.current?.clientWidth + mx / 2 - 160
         }px`;
         imageContainerRef.current.style.height = `${
-          sectionContainerRef.current.clientHeight
+          sectionContainerRef.current.clientHeight + 40
         }px`;
       } else {
         imageContainerRef.current.style.height = `unset`;
@@ -55,11 +60,8 @@ const Hero = () => {
       ref={sectionContainerRef}
     >
       <Container className="relative w-full z-10 flex justify-center">
-        <div
-          className="relative w-full max-w-3xl"
-          ref={sloganContainerRef}
-        >
-          <h1 className="font-display text-5xl font-bold tracking-tighter text-slate-900 sm:text-7xl">
+        <div className="relative w-full max-w-3xl" ref={sloganContainerRef}>
+          <h1 className="font-display text-5xl font-bold tracking-tighter text-slate-900 sm:text-7xl sm:mb-12">
             <span className="sr-only">DevJoy - </span>面向开发者的游园会
           </h1>
           <div className="mt-6 space-y-6 font-display text-2xl tracking-tight text-black">
@@ -77,7 +79,7 @@ const Hero = () => {
             <Image className="-mt-1 h-7 w-auto" src={bug4Image} alt="" />
             <div>免费预约入场券</div>
           </Button> */}
-          <dl className="mt-10 grid grid-cols-1 gap-y-6 gap-x-10 sm:mt-16 sm:gap-y-10 sm:gap-x-16 sm:text-center lg:auto-cols-auto lg:grid-flow-col lg:grid-cols-none lg:justify-start lg:text-left">
+          <dl className="mt-8 grid grid-cols-1 gap-y-6 gap-x-10 sm:mt-12 sm:gap-y-10 sm:gap-x-16 sm:text-center lg:auto-cols-auto lg:grid-flow-col lg:grid-cols-none lg:justify-start lg:text-left">
             {[["展会地点", "上海市静安区威海路 696 号 WeWork 中国旗舰店"]].map(
               ([name, value]) => (
                 <div key={name}>
@@ -92,7 +94,7 @@ const Hero = () => {
         </div>
       </Container>
       <div
-        className="mt-8 shrink-0 h-auto w-full lg:absolute lg:left-full lg:h-full lg:-mt-24 lg:w-full"
+        className="mt-8 shrink-0 h-auto w-full max-w-3xl mx-auto lg:absolute lg:left-full lg:h-full lg:-mt-28 lg:w-full"
         ref={imageContainerRef}
       >
         <img
