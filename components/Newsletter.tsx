@@ -13,11 +13,9 @@ const Newsletter = () => {
               <p className="font-display text-4xl font-medium tracking-tighter text-white sm:text-5xl">
                 关注公众号获取预约方式
               </p>
-
               <p className="mt-8 font-display text-2xl font-medium tracking-tighter text-white">
                 2022.11.05 ~ 06 (周六，周日)
               </p>
-
               <p className="mt-2 font-display text-2xl font-medium tracking-tighter text-white">
                 上海静安区威海路 696 号 WeWork 中国旗舰店
               </p>

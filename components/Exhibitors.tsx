@@ -82,12 +82,19 @@ const Exhibitors = () => {
   let id = useId();
 
   return (
-    <section id="speakers" aria-labelledby="speakers-title" className="py-20 sm:py-32">
+    <section
+      id="speakers"
+      aria-labelledby="speakers-title"
+      className="py-20 sm:py-32"
+    >
       <Container className="">
         <div className="mx-auto max-w-4xl lg:mx-0">
           <div className="flex flex-row items-center space-x-2">
             <Image className="h-16 w-auto" src={bug3Image} alt="" />
-            <h2 id="speakers-title" className="font-display text-4xl font-medium tracking-tighter text-slate-900 sm:text-5xl">
+            <h2
+              id="speakers-title"
+              className="font-display text-4xl font-medium tracking-tighter text-slate-900 sm:text-5xl"
+            >
               参展商
             </h2>
           </div>
@@ -115,7 +122,9 @@ const Exhibitors = () => {
                   />
                 </a>
               </div>
-              <h3 className="mt-8 font-display text-xl font-bold tracking-tight text-black">{exhibitor.name}</h3>
+              <h3 className="mt-8 font-display text-xl font-bold tracking-tight text-black">
+                {exhibitor.name}
+              </h3>
             </div>
           ))}
         </div>

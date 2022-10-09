@@ -1,10 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
-import Image from "next/image";
 import { useEffect, useRef } from "react";
-import Button from "./Button";
 import Container from "./Container";
 import skateboardImage from "@/public/images/skateboard.webp";
-import bug4Image from "@/public/images/bug4.webp";
 
 const TAILWIND_LG_WIDTH = 1024;
 
@@ -28,9 +25,7 @@ const Hero = () => {
         imageContainerRef.current.style.left = `${
           sloganContainerRef.current?.clientWidth + mx / 2 - 160
         }px`;
-        imageContainerRef.current.style.height = `${
-          sectionContainerRef.current.clientHeight
-        }px`;
+        imageContainerRef.current.style.height = `${sectionContainerRef.current.clientHeight}px`;
       } else {
         imageContainerRef.current.style.height = `unset`;
       }
@@ -55,10 +50,7 @@ const Hero = () => {
       ref={sectionContainerRef}
     >
       <Container className="relative w-full z-10 flex justify-center">
-        <div
-          className="relative w-full max-w-3xl"
-          ref={sloganContainerRef}
-        >
+        <div className="relative w-full max-w-3xl" ref={sloganContainerRef}>
           <h1 className="font-display text-5xl font-bold tracking-tighter text-slate-900 sm:text-7xl">
             <span className="sr-only">DevJoy - </span>面向开发者的游园会
           </h1>
