@@ -122,7 +122,7 @@ const Exhibitors = () => {
                   />
                 </a>
               </div>
-              <h3 className="mt-8 font-display text-xl font-bold tracking-tight text-black">
+              <h3 className="font-display text-xl font-bold tracking-tight text-black text-center mt-4 sm:text-left">
                 {exhibitor.name}
               </h3>
             </div>
