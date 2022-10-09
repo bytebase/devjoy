@@ -62,11 +62,11 @@ const Hero = () => {
       <Container className="relative w-full z-10 flex justify-center">
         <div className="relative w-full max-w-3xl" ref={sloganContainerRef}>
           <h1 className="font-display text-5xl font-bold tracking-tighter text-slate-900 sm:text-7xl sm:mb-12">
-            <span className="sr-only">DevJoy - </span>面向开发者的游园会
+            <span className="sr-only">DevJoy - </span>开发者的游园会
           </h1>
           <div className="mt-6 space-y-6 font-display text-2xl tracking-tight text-black">
             <p>
-              DevJoy 是一个面向开发者 (Developer) 的游园会
+              DevJoy 是一场开发者 (Developer) 的游园会
               (Joy)，汇聚了开发者感兴趣的方方面面，包括但不限于开发者工具，游戏，键盘，手办，漫画等。
             </p>
             <p>如果您已经是一名开发者，在这里可以找到社区和同伴。</p>
