@@ -11,7 +11,7 @@ import monkeyUserImage from "@/public/images/logos/monkeyuser.png";
 import orangeCatImage from "@/public/images/logos/orangecat.png";
 import pingcapImage from "@/public/images/logos/pingcap.png";
 import showMeBugImage from "@/public/images/logos/showmebug.svg";
-import xdImage from "@/public/images/logos/xd.png";
+import taptapImage from "@/public/images/logos/taptap.png";
 import yuqueImage from "@/public/images/logos/yuque.png";
 import bug3Image from "@/public/images/bug3.webp";
 
@@ -67,9 +67,9 @@ const exhibitors = [
     image: showMeBugImage,
   },
   {
-    name: "心动游戏",
+    name: "TapTap",
     website: "https://xd.com",
-    image: xdImage,
+    image: taptapImage,
   },
   {
     name: "语雀",
