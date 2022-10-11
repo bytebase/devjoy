@@ -68,7 +68,7 @@ const exhibitors = [
   },
   {
     name: "TapTap",
-    website: "https://xd.com",
+    website: "https://www.taptap.com/",
     image: taptapImage,
   },
   {
