@@ -28,10 +28,10 @@ const Header = () => {
           </div>
         </div>
         <div className="hidden shrink-0 sm:mt-10 sm:flex lg:mt-0 lg:grow lg:basis-1/4 lg:justify-end">
-          {/* <Button href="#" className="items-center">
+          <Button href="https://app.ma.scrmtech.com/meetings-api/sapIndex/SapSourceData?pf_uid=14483_1648&sid=68471&source=2&pf_type=3" className="items-center">
             <Image className="-mt-1 h-7 w-auto" src={bug4Image} alt="" />
             <div>免费预约入场券</div>
-          </Button> */}
+          </Button>
         </div>
       </Container>
     </header>

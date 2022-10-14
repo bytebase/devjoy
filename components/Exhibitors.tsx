@@ -2,6 +2,7 @@ import { useId } from "react";
 import Image from "next/future/image";
 import Container from "./Container";
 import awsImage from "@/public/images/logos/aws.png";
+import bilibiliBugImage from "@/public/images/logos/bilibili.png";
 import bytebaseImage from "@/public/images/logos/bytebase.png";
 import candySignImage from "@/public/images/logos/candysign.svg";
 import crealityImage from "@/public/images/logos/creality.png";
@@ -10,7 +11,6 @@ import microsoftImage from "@/public/images/logos/microsoft.png";
 import monkeyUserImage from "@/public/images/logos/monkeyuser.png";
 import orangeCatImage from "@/public/images/logos/orangecat.png";
 import pingcapImage from "@/public/images/logos/pingcap.png";
-import showMeBugImage from "@/public/images/logos/showmebug.svg";
 import taptapImage from "@/public/images/logos/taptap.png";
 import yuqueImage from "@/public/images/logos/yuque.png";
 import bug3Image from "@/public/images/bug3.webp";
@@ -20,6 +20,11 @@ const exhibitors = [
     name: "AWS",
     website: "https://aws.amazon.com",
     image: awsImage,
+  },
+  {
+    name: "哔哩哔哩",
+    website: "https://bilibili.com",
+    image: bilibiliBugImage,
   },
   {
     name: "Bytebase",
@@ -60,11 +65,6 @@ const exhibitors = [
     name: "PingCAP",
     website: "https://pingcap.com",
     image: pingcapImage,
-  },
-  {
-    name: "ShowMeBug",
-    website: "https://showmebug.com",
-    image: showMeBugImage,
   },
   {
     name: "TapTap",
