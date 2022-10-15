@@ -70,8 +70,8 @@ const Hero = () => {
           <div className="mt-6 space-y-6 font-display text-2xl tracking-tight text-black">
             <p>这是一场开发者 (Developer) 的游园会 (Joy)。</p>
             <p>如果您已经是一名开发者，在这里可以找到社区和同伴。</p>
-            <p>如果您想成为一名开发者，在这里可以窥见未来的职业。</p>
-            <p>您也可以只是好奇开发者，在这里了解他们的生活方式。</p>
+            <p>如果您想成为一名开发者，在这里可以窥见职业的未来。</p>
+            <p>您也可以只是好奇开发者，在这里了解他们的「生活方式」。</p>
           </div>
           <Button
             href="https://app.ma.scrmtech.com/meetings-api/sapIndex/SapSourceData?pf_uid=14483_1648&sid=68471&source=2&pf_type=3"
