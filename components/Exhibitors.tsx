@@ -17,11 +17,6 @@ import bug3Image from "@/public/images/bug3.webp";
 
 const exhibitors = [
   {
-    name: "AWS",
-    website: "https://aws.amazon.com",
-    image: awsImage,
-  },
-  {
     name: "哔哩哔哩",
     website: "https://bilibili.com",
     image: bilibiliBugImage,
@@ -70,6 +65,11 @@ const exhibitors = [
     name: "TapTap",
     website: "https://www.taptap.com/",
     image: taptapImage,
+  },
+  {
+    name: "亚马逊云科技",
+    website: "https://www.amazonaws.cn/en/",
+    image: awsImage,
   },
   {
     name: "语雀",
