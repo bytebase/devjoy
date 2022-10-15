@@ -99,7 +99,7 @@ const Exhibitors = () => {
             </h2>
           </div>
           <p className="mt-4 font-display text-2xl tracking-tight text-black">
-            从国际知名大厂到个人工作室，我们找来了那些内容有趣，开发者喜欢的展出。
+            从国际知名大厂到个人工作室，我们一起来呈现开发者的生活方式。
           </p>
         </div>
         <div className="mt-8 grid grid-cols-1 gap-x-8 gap-y-10 sm:grid-cols-2 sm:gap-y-16 md:grid-cols-3 [&:not(:focus-visible)]:focus:outline-none">

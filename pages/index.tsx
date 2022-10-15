@@ -6,6 +6,7 @@ import Hero from "@/components/Hero";
 import Newsletter from "@/components/Newsletter";
 import Sponsors from "@/components/Sponsors";
 import Venue from "@/components/Venue";
+import Lifestyle from "../components/Lifestyle";
 
 const Home = () => {
   return (
@@ -20,6 +21,7 @@ const Home = () => {
       <Header />
       <main>
         <Hero />
+        <Lifestyle />
         <Exhibitors />
         <Venue />
         <Sponsors />
