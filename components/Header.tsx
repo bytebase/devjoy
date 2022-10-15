@@ -7,7 +7,7 @@ import bug4Image from "@/public/images/bug4.webp";
 
 const Header = () => {
   return (
-    <header className="relative z-50 pb-11 lg:pt-11">
+    <header className="relative z-50 pb-4 sm:pb-10 lg:pt-10">
       <Container className="w-full flex flex-wrap items-center justify-center sm:justify-between lg:flex-nowrap">
         <div className="mt-10 shrink-0 lg:mt-0 lg:grow lg:basis-1/4">
           <Logo className="h-24 w-auto text-slate-900 shrink-0" />
@@ -28,8 +28,11 @@ const Header = () => {
           </div>
         </div>
         <div className="hidden shrink-0 sm:mt-10 sm:flex lg:mt-0 lg:grow lg:basis-1/4 lg:justify-end">
-          <Button href="https://app.ma.scrmtech.com/meetings-api/sapIndex/SapSourceData?pf_uid=14483_1648&sid=68471&source=2&pf_type=3" className="items-center">
-            <Image className="-mt-1 h-7 w-auto" src={bug4Image} alt="" />
+          <Button
+            href="https://app.ma.scrmtech.com/meetings-api/sapIndex/SapSourceData?pf_uid=14483_1648&sid=68471&source=2&pf_type=3"
+            className="items-center text-lg"
+          >
+            <Image className="-mt-1 h-8 w-auto" src={bug4Image} alt="" />
             <div>免费预约入场券</div>
           </Button>
         </div>
