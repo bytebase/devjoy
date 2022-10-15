@@ -4,6 +4,7 @@ import { useEffect, useRef } from "react";
 import Button from "./Button";
 import Container from "./Container";
 import skateboardImage from "@/public/images/skateboard.webp";
+import codeImage from "@/public/images/lifestyle/code.webp";
 import bug4Image from "@/public/images/bug4.webp";
 
 const TAILWIND_XL_WIDTH = 1280;
@@ -64,8 +65,13 @@ const Hero = () => {
     >
       <Container className="relative w-full z-10 flex justify-center">
         <div className="relative w-full max-w-3xl" ref={sloganContainerRef}>
-          <h1 className="font-display text-5xl font-bold tracking-tighter text-slate-900 sm:text-7xl sm:mb-12">
-            <span className="sr-only">DevJoy - </span>开发者的游园会
+          <Image
+            className="absolute -mt-12 -ml-12 hidden sm:block h-20 w-auto mr-2"
+            src={codeImage}
+            alt=""
+          />
+          <h1 className="mt-4 font-display text-5xl font-bold tracking-tighter text-slate-900 sm:text-7xl">
+            <span className="sr-only">DevJoy - </span> 开发者的游园会
           </h1>
           <div className="mt-6 space-y-6 font-display text-2xl tracking-tight text-black">
             <p>这是一场开发者 (Developer) 的游园会 (Joy)。</p>
