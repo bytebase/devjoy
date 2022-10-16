@@ -26,11 +26,11 @@ const Lifestyle = () => {
       <Container className="relative z-10">
         <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-6xl lg:pr-24">
           <div className="flex flex-row items-center space-x-2">
-            <h2 className="font-display text-4xl font-medium tracking-tighter text-slate-900 sm:text-6xl">
+            <h2 className="font-display text-4xl font-medium tracking-tighter text-slate-900 sm:text-6xl sm:mr-4">
               代码之外 处处精彩
             </h2>
             <Image
-              className="hidden lg:block mt-2 h-24 w-auto"
+              className="hidden sm:block h-24 w-auto"
               src={campingImage}
               alt=""
             />
@@ -46,7 +46,7 @@ const Lifestyle = () => {
                 className="group col-span-1 flex justify-center py-4 px-4"
               >
                 <Image
-                  className="object-contain h-24 sm:h-32 w-auto transition duration-300 group-hover:scale-110"
+                  className="object-contain h-28 sm:h-40 w-auto transition duration-300 group-hover:scale-110"
                   src={lifestyle.image}
                   alt=""
                 />
