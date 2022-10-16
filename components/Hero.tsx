@@ -7,7 +7,6 @@ import skateboardImage from "@/public/images/skateboard.webp";
 import codeImage from "@/public/images/lifestyle/code.webp";
 import bug4Image from "@/public/images/bug4.webp";
 
-const TAILWIND_XL_WIDTH = 1280;
 const TAILWIND_LG_WIDTH = 1024;
 
 const Hero = () => {
@@ -26,19 +25,12 @@ const Hero = () => {
         sectionContainerRef.current.clientWidth -
         sloganContainerRef.current.clientWidth;
 
-      if (document.body.clientWidth >= TAILWIND_XL_WIDTH) {
+      if (document.body.clientWidth >= TAILWIND_LG_WIDTH) {
         imageContainerRef.current.style.left = `${
-          sloganContainerRef.current?.clientWidth + mx / 2 - 120
+          sloganContainerRef.current?.clientWidth + mx / 2 - 240
         }px`;
         imageContainerRef.current.style.height = `${
-          sectionContainerRef.current.clientHeight + 40
-        }px`;
-      } else if (document.body.clientWidth >= TAILWIND_LG_WIDTH) {
-        imageContainerRef.current.style.left = `${
-          sloganContainerRef.current?.clientWidth + mx / 2 - 160
-        }px`;
-        imageContainerRef.current.style.height = `${
-          sectionContainerRef.current.clientHeight + 40
+          sectionContainerRef.current.clientHeight + 60
         }px`;
       } else {
         imageContainerRef.current.style.height = `unset`;
@@ -73,7 +65,7 @@ const Hero = () => {
           <h1 className="mt-4 font-display text-5xl font-bold tracking-tighter text-slate-900 sm:text-7xl">
             <span className="sr-only">DevJoy - </span> 开发者的游园会
           </h1>
-          <div className="mt-6 space-y-6 font-display text-2xl tracking-tight text-black">
+          <div className="mt-12 space-y-4 font-display text-2xl tracking-tight text-black">
             <p>这是一场开发者 (Developer) 的游园会 (Joy)。</p>
             <p>如果您已经是一名开发者，在这里可以找到社区和同伴。</p>
             <p>如果您想成为一名开发者，在这里可以窥见职业的未来。</p>
