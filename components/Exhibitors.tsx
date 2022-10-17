@@ -6,6 +6,7 @@ import bilibiliBugImage from "@/public/images/logos/bilibili.png";
 import bytebaseImage from "@/public/images/logos/bytebase.png";
 import candySignImage from "@/public/images/logos/candysign.svg";
 import crealityImage from "@/public/images/logos/creality.png";
+import durgodImage from "@/public/images/logos/durgod.png";
 import goomicsImage from "@/public/images/logos/goomics.png";
 import microsoftImage from "@/public/images/logos/microsoft.png";
 import monkeyUserImage from "@/public/images/logos/monkeyuser.png";
@@ -35,6 +36,11 @@ const exhibitors = [
     name: "创想三维",
     website: "https://creality.cn",
     image: crealityImage,
+  },
+  {
+    name: "杜伽",
+    website: "https://www.durgod.com/",
+    image: durgodImage,
   },
   {
     name: "Goomics",
