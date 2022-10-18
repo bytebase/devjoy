@@ -3,6 +3,7 @@ import Exhibitors from "@/components/Exhibitors";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
+import Medias from "@/components/Medias";
 import Newsletter from "@/components/Newsletter";
 import Sponsors from "@/components/Sponsors";
 import Venue from "@/components/Venue";
@@ -25,6 +26,7 @@ const Home = () => {
         <Exhibitors />
         <Venue />
         <Sponsors />
+        <Medias />
         <Newsletter />
       </main>
       <Footer />
