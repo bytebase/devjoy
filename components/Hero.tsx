@@ -72,7 +72,7 @@ const Hero = () => {
             <p>您也可以只是好奇开发者，在这里了解他们的生活方式。</p>
           </div>
           <Button
-            href="https://app.ma.scrmtech.com/meetings-api/sapIndex/SapSourceData?pf_uid=14483_1648&sid=68471&source=2&pf_type=3"
+            href="https://app.ma.scrmtech.com/meetings-api/sapIndex/SapSourceData?pf_uid=14483_1648&sid=68471&source=2&pf_type=3&channel_id=4568&channel_name=Partner+WeChat+OA&tag_id=98362307a04a5e44"
             className="mt-10 w-full text-xl py-5 items-center sm:hidden"
           >
             <Image className="-mt-1 h-8 w-auto" src={bug4Image} alt="" />

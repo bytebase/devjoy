@@ -29,7 +29,7 @@ const Header = () => {
         </div>
         <div className="hidden shrink-0 sm:mt-10 sm:flex lg:mt-0 lg:grow lg:basis-1/4 lg:justify-end">
           <Button
-            href="https://app.ma.scrmtech.com/meetings-api/sapIndex/SapSourceData?pf_uid=14483_1648&sid=68471&source=2&pf_type=3"
+            href="https://app.ma.scrmtech.com/meetings-api/sapIndex/SapSourceData?pf_uid=14483_1648&sid=68471&source=2&pf_type=3&channel_id=4568&channel_name=Partner+WeChat+OA&tag_id=98362307a04a5e44"
             className="items-center text-lg"
           >
             <Image className="-mt-1 h-8 w-auto" src={bug4Image} alt="" />
