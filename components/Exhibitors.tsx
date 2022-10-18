@@ -10,6 +10,7 @@ import durgodImage from "@/public/images/logos/durgod.png";
 import goomicsImage from "@/public/images/logos/goomics.png";
 import jetBrainsImage from "@/public/images/logos/jetbrains.png";
 import jinaImage from "@/public/images/logos/jina.png";
+import l1928Image from "@/public/images/logos/l1928.png";
 import microsoftImage from "@/public/images/logos/microsoft.png";
 import monkeyUserImage from "@/public/images/logos/monkeyuser.png";
 import orangeCatImage from "@/public/images/logos/orangecat.png";
@@ -67,6 +68,11 @@ const exhibitors = [
     name: "橘猫工业",
     website: "http://www.orangecat.fun",
     image: orangeCatImage,
+  },
+  {
+    name: "L1928",
+    website: "http://sjrl1928.88.infooweb.com",
+    image: l1928Image,
   },
   {
     name: "Microsoft",
