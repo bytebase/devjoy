@@ -8,12 +8,18 @@ import candySignImage from "@/public/images/logos/candysign.svg";
 import crealityImage from "@/public/images/logos/creality.png";
 import durgodImage from "@/public/images/logos/durgod.png";
 import goomicsImage from "@/public/images/logos/goomics.png";
+import jetBrainsImage from "@/public/images/logos/jetbrains.png";
+import jinaImage from "@/public/images/logos/jina.png";
 import microsoftImage from "@/public/images/logos/microsoft.png";
 import monkeyUserImage from "@/public/images/logos/monkeyuser.png";
 import orangeCatImage from "@/public/images/logos/orangecat.png";
 import pingcapImage from "@/public/images/logos/pingcap.png";
+import sofaStackImage from "@/public/images/logos/sofastack.png";
 import taptapImage from "@/public/images/logos/taptap.png";
+import tensorChordImage from "@/public/images/logos/tensorchord.png";
 import yuqueImage from "@/public/images/logos/yuque.png";
+import zalifyImage from "@/public/images/logos/zalify.png";
+import zfrontierImage from "@/public/images/logos/zfrontier.png";
 import bug3Image from "@/public/images/bug3.webp";
 
 const exhibitors = [
@@ -48,6 +54,16 @@ const exhibitors = [
     image: goomicsImage,
   },
   {
+    name: "JetBrains",
+    website: "https://www.jetbrains.com/",
+    image: jetBrainsImage,
+  },
+  {
+    name: "Jina AI",
+    website: "https://jina.ai/",
+    image: jinaImage,
+  },
+  {
     name: "橘猫工业",
     website: "http://www.orangecat.fun",
     image: orangeCatImage,
@@ -68,6 +84,16 @@ const exhibitors = [
     image: pingcapImage,
   },
   {
+    name: "SOFAStack",
+    website: "https://www.sofastack.tech",
+    image: sofaStackImage,
+  },
+  {
+    name: "TensorChord",
+    website: "https://tensorchord.ai/",
+    image: tensorChordImage,
+  },
+  {
     name: "TapTap",
     website: "https://www.taptap.com/",
     image: taptapImage,
@@ -81,6 +107,16 @@ const exhibitors = [
     name: "语雀",
     website: "https://yuque.com",
     image: yuqueImage,
+  },
+  {
+    name: "装备前线",
+    website: "https://www.zfrontier.com/",
+    image: zfrontierImage,
+  },
+  {
+    name: "Zalify",
+    website: "https://www.zalify.com/",
+    image: zalifyImage,
   },
 ];
 
