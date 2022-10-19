@@ -27,7 +27,7 @@ const Home = () => {
         />
         <meta
           name="og:image"
-          content="https://www.devjoy.org/images/skateboard.webp"
+          content="https://www.devjoy.org/images/logos/devjoy.webp"
         />
       </Head>
       <Header />
