@@ -25,10 +25,6 @@ const Home = () => {
           name="og:description"
           content="DevJoy 是一个面向开发者 (Developer) 的游园会 (Joy)，汇聚了开发者感兴趣的方方面面，包括但不限于开发者工具，游戏，键盘，手办，漫画等。"
         />
-        <meta
-          name="og:image"
-          content="https://www.devjoy.org/images/logos/devjoy.webp"
-        />
       </Head>
       <Header />
       <main>
