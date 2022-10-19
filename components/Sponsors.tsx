@@ -21,7 +21,7 @@ const Sponsors = () => {
             联合主办方
           </h2>
         </div>
-        <div className="mx-auto mt-4 grid max-w-max grid-cols-1 place-content-center gap-y-12 gap-x-32 sm:grid-cols-3 md:gap-x-16 lg:gap-x-32">
+        <div className="mx-auto mt-8 px-4 sm:px-0 grid max-w-max grid-cols-1 place-content-center gap-y-12 gap-x-32 sm:grid-cols-3 md:gap-x-16 lg:gap-x-32">
           {sponsors.map((sponsor) => (
             <a
               href={sponsor.website}
