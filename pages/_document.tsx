@@ -14,6 +14,7 @@ const Document = () => {
           rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Noto+Sans+SC:wght@100..900&display=swap"
         />
+        <script defer data-domain="devjoy.org" src="https://plausible.io/js/plausible.js"></script>
       </Head>
       <body>
         <Main />
